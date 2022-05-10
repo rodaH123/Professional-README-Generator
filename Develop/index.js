@@ -1,9 +1,26 @@
 // TODO: Include packages needed for this application
 const fs = require('fs')
 const inquirer = require('inquirer')
+const fs = require('fs');
+
+//Internal modules
+
 
 // TODO: Create an array of questions for user input
 const questions = [
+    {
+         type: 'input',
+        message: "What is your GitHub username?',
+        name: 'username',
+        default: 'rodaH123',
+        validate: function(answer) {
+            if(answer.length < 1){
+            return console.log("A valid GitHub username is required.");
+            }
+            return true;
+        }
+}
+
     {
        type: 'input',
        name:'projectTitle',
@@ -17,14 +34,25 @@ const questions = [
     {
         type: 'input',
         name: 'Installation',
-        message: 'What is your installation?'
+        message: 'What are the installation instructions?'
     },
 
     {   type: 'input',
         name: 'usage information',
         message: 'What is your usage information?'
 
-    }
+    },
+
+    { type:'list'
+      name: 'What license are you using for your project',
+      choices: 
+    
+    },
+
+    { type: 'input' 
+      name: 'test',
+      message: 'What are the test intructions?'
+   },
 ];
 
 // TODO: Create a function to write README file
