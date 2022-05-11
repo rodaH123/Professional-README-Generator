@@ -5,16 +5,16 @@ function generateMarkdown(userResponses, userInfo)
   let draftToC = '## Table of Contents';
 
   if(userResponses.installation !=='') {draftToC +=`
-  *[Installation](#installation)' };
+  *[Installation](#installation)` };
 
   if(userResponses.usage !=='') {draftToC +=`
-  *[Usage](#usage)' };
+  *[Usage](#usage)` };
 
   if(userResponses.contributing !=='') {draftToC +=`
-  *[Contributing](#contributing)' };
+  *[Contributing](#contributing)` };
 
   if(userResponses.tests !=='') {draftToC +=`
-  *[Tests](#tests)' };
+  *[Tests](#tests)` };
 
 
   if(userResponses.usage)
