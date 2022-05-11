@@ -37,7 +37,28 @@ function generateMarkdown(userResponses, userInfo) {
 
   if(userResponses.usage)
 
-//Generate Mark
-   
-}
+//Generate Mark for the top required portions of the REadMe file.
+let draftMarkdown =
+`# ${userResponses.title}
+
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor)
+  
+Check out the badges hosted by [shields.io](https://shields.io/).
+
+
+#Description
+*The what, why, and how:*
+${userResponses.description}
+
+`
+//Add Table to Contents to markdown
+draftMarkdown += draftToC
+
+//Add License section to the Table of Contents
+draftMarkdown += `
+*[Licenes](#license)`;
+
+
+
+
 module.exports = generateMarkdown;

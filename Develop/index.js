@@ -54,24 +54,24 @@ const questions = [
     }, 
     {
         type: 'input',
-        message: 'Installation',
-        name: 'What are the installation instructions?'
+        message: "What are the installation instructions?",
+        name: 'installation'
     },
 
-    {   type: 'input',
-        message "Provide examples and instructions of your project being used in the Usage section",
+    {   type:'input',
+        message "Provide examples and instructions of how your project will be used in the Usage section",
         name: 'usage'
     },
 
     {
          type:'input',
-         message:'If applicable, provide guidelines on how other individulas can contribut to this work",
+         message:"If applicable, provide guidelines on how other individulas can contribut to this work",
          name:'contributing'
     },
 
     { 
-        type: 'input' 
-        message: 'If applicable, provide any tests written for your applicaiton",
+        type:'input',
+        message:"If applicable, provide any tests written for your applicaiton",
         name: 'tests'
    },
    {
