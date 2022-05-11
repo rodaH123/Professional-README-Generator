@@ -17,4 +17,9 @@ function generateMarkdown(data) {
 `;
 }
 
+function generateMarkdown(userResponses, userInfo){
+
+  //Generate a Table of Contents
+   
+}
 module.exports = generateMarkdown;
