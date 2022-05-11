@@ -17,9 +17,27 @@ function generateMarkdown(data) {
 `;
 }
 
-function generateMarkdown(userResponses, userInfo){
+function generateMarkdown(userResponses, userInfo) {
 
-  //Generate a Table of Contents
+  //Generate a Table of Contents based on userResponses
+  let draftToC = '## Table of Contents';
+
+  if(userResponses.installation !=='') {draftToC +=`
+  *[Installation](#installation)' };
+
+  if(userResponses.usage !=='') {draftToC +=`
+  *[Usage](#usage)' };
+
+  if(userResponses.contributing !=='') {draftToC +=`
+  *[Contributing](#contributing)' };
+
+  if(userResponses.tests !=='') {draftToC +=`
+  *[Tests](#tests)' };
+
+
+  if(userResponses.usage)
+
+//Generate Mark
    
 }
 module.exports = generateMarkdown;
