@@ -100,7 +100,7 @@ function writeToFile(fileName, data) {
 const writeFileAsync = util.promisify(writeToFile);
 async function init() {
     try {
-        
+
         // Prompt Inquirer questions
         const userResponses = await inquirer.prompt(questions);
         console.log("Your responses: ", userResponses);
@@ -120,13 +120,9 @@ async function init() {
 
     } catch (error) {
         console.log(error);
-    }
-    }
+        }
+    };
 
-        console.log('The title is'+ answers.projectTitle)
-        })
- 
-}
 
 // Function call to initialize app
 init();
