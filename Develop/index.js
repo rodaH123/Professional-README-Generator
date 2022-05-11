@@ -1,8 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const fs = require('fs');
-const util = require('util');
+const utils = require('utils');
 
 //Internal modules
 const api = require('./utils/api.js');
@@ -59,7 +58,7 @@ const questions = [
     },
 
     {   type:'input',
-        message "Provide examples and instructions of how your project will be used in the Usage section",
+        message: "Provide examples and instructions of how your project will be used in the Usage section",
         name: 'usage'
     },
 
