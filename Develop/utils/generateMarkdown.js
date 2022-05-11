@@ -1,5 +1,5 @@
 
-function generateMarkdown(userResponses, userInfo) 
+function generateMarkdown(userResponses, userInfo) {
 
   //Generate a Table of Contents based on userResponses
   let draftToC = '## Table of Contents';
@@ -17,9 +17,7 @@ function generateMarkdown(userResponses, userInfo)
   *[Tests](#tests)` };
 
 
-  if(userResponses.usage)
-
-//Generate Mark for the top required portions of the REadMe file.
+//Generate Markdown for the top required portions of the REadMe file.
 let draftMarkdown =
 `# ${userResponses.title}
 

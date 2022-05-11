@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const utils = require('utils');
 
 //Internal modules
 const api = require('./utils/api.js');
@@ -96,7 +95,7 @@ function writeToFile(fileName, data) {
 
 
 // TODO: Create a function to initialize app
-const writeFileAsync = util.promisify(writeToFile);
+//const writeFileAsync = util.promisify(writeToFile);
 async function init() {
     try {
 
